@@ -1,6 +1,16 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
+@font-face {
+    font-family: primeirafonte;
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: fontesecundaria;
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf) format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,20 +18,32 @@
 
 body {
     background-color: #F3E5D8;
+    font-family: fontesecundaria;
 }
 
 .conteudo__principal {
-    width: 70%;
+    width: 50%;
     margin: auto;
     margin-top: 2%;
     margin-bottom: 1%;
-    padding: 2em;
+    padding: 1.7em;
     border-radius: 16px;
     background-color: white;
 }
 
-.cabecalho {
+/* CABECALHO */
 
+.cabecalho h1 {
+    font-family: primeirafonte;
+    font-weight: 500;
+    padding-bottom: 0.7em;
+    color: rgb(43, 9, 9);
+}
+
+.cabecalho p {
+    text-align: justify;
+    width: 95%;
+    padding-bottom: 1.5em;
 }
 
 .cabecalho img {
@@ -30,4 +52,58 @@ body {
     width: 100%;
     border-radius: 8px;
     padding-bottom: 2em;
+}
+
+/* SEÇÃO PREPARAÇÃO */
+
+.secao-preparacao {
+    background-color: #FFF7FC;
+    border-radius: 16px;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.secao-preparacao h3 {
+    font-size: 16px;
+    color: #8f2d6b;
+    padding-bottom: 0.7em;
+}
+
+.secao-preparacao ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style-position: inside;
+    color: rgb(107, 107, 107);
+}
+
+.secao-preparacao ul strong {
+    color: rgba(43, 9, 9, 0.705);
+}
+
+/* SEÇÃO INGREDIENTES */
+
+.secao-ingredientes {
+    margin-bottom: 1em;
+}
+
+.secao-ingredientes h2 {
+    font-size: 1.5em;
+    font-weight: 500;
+    font-family: primeirafonte;
+    color: rgba(95, 10, 10, 0.815);
+    padding-bottom: 1rem;
+}
+
+.secao-ingredientes ul {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    list-style-position: inside;
+    color: rgb(70, 70, 70);
+}
+
+.secao-ingredientes hr {
+    margin-top: 1.5em;
+    border-color: rgba(112, 112, 112, 0.123);
 }
