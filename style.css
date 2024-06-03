@@ -1,0 +1,33 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F3E5D8;
+}
+
+.conteudo__principal {
+    width: 70%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    padding: 2em;
+    border-radius: 16px;
+    background-color: white;
+}
+
+.cabecalho {
+
+}
+
+.cabecalho img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    border-radius: 8px;
+    padding-bottom: 2em;
+}
