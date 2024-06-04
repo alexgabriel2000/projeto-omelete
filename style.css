@@ -1,5 +1,5 @@
 .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: hsl(0, 81%, 80%); }
 
 @font-face {
     font-family: primeirafonte;
@@ -75,6 +75,7 @@ body {
     gap: 8px;
     list-style-position: inside;
     color: rgb(107, 107, 107);
+    padding-left: 0.5em;
 }
 
 .secao-preparacao ul strong {
@@ -101,9 +102,105 @@ body {
     gap: 7px;
     list-style-position: inside;
     color: rgb(70, 70, 70);
+    padding-left: 0.5em;
 }
 
 .secao-ingredientes hr {
     margin-top: 1.5em;
     border-color: rgba(112, 112, 112, 0.123);
 }
+
+/* SEÇÃO INTRODUÇÕES */
+
+.secao-introductions {
+    padding-bottom: 1em;
+}
+
+.secao-introductions h2 {
+    font-weight: 500;
+    font-family: primeirafonte;
+    color: rgba(95, 10, 10, 0.815);
+    padding-bottom: 1rem;
+}
+
+.secao-introductions ol {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    list-style-position: inside;
+    padding-left: 0.5em;
+    color: rgb(70, 70, 70);
+}
+
+.secao-introductions strong {
+    color: rgba(43, 9, 9, 0.705);
+}
+
+.secao-introductions span {
+    line-height: 1.5em;
+}
+
+.secao-introductions hr {
+    margin-top: 1.5em;
+    border-color: rgba(112, 112, 112, 0.123);
+}
+
+/* SEÇÃO NUTRIÇÃO */
+
+.secao__nutrition {
+    color: rgb(70, 70, 70);
+    padding-top: 0.5em;
+}
+
+.secao__nutrition h2 {
+    font-weight: 500;
+    font-family: primeirafonte;
+    color: rgba(95, 10, 10, 0.815);
+    padding-bottom: 1rem;
+}
+
+.secao__nutrition .nutrition-text {
+    padding-bottom: 1.5rem;
+}
+
+.secao__nutrition ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style-type: none;
+    
+}
+
+.secao__nutrition ul li p {
+    padding-left: 10%;
+}
+
+.secao__nutrition ul li span {
+    
+}
+
+.secao__nutrition ul li span {
+    color: rgba(95, 10, 10, 0.815);
+}
+
+.secao__nutrition hr {
+    margin-top: 0.5rem;
+    border-color: rgba(112, 112, 112, 0.123);
+}
+
+.nutrition-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* RODAPÉ */
+
+.rodape {
+    margin-top: 2em;
+    padding: 3px;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+
