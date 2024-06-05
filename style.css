@@ -1,3 +1,5 @@
+@import url('receita.css');
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(0, 81%, 80%); }
 
@@ -22,7 +24,7 @@ body {
 }
 
 .conteudo__principal {
-    width: 50%;
+    width: 50vw;
     margin: auto;
     margin-top: 2%;
     margin-bottom: 1%;
@@ -31,166 +33,71 @@ body {
     background-color: white;
 }
 
-/* CABECALHO */
+@media screen and (max-width: 768px) {
+    .conteudo__principal {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
 
-.cabecalho h1 {
-    font-family: primeirafonte;
-    font-weight: 500;
-    padding-bottom: 0.7em;
-    color: rgb(43, 9, 9);
-}
+    /* <!-- CABECALHO --> */
 
-.cabecalho p {
-    text-align: justify;
-    width: 95%;
-    padding-bottom: 1.5em;
-}
+    .cabecalho img {
+        width: 100vw;
+        border-radius: 0;
+    }
 
-.cabecalho img {
-    display: block;
-    margin: auto;
-    width: 100%;
-    border-radius: 8px;
-    padding-bottom: 2em;
-}
+    .cabecalho h1 {
+        text-align: center;
+    }
 
-/* SEÇÃO PREPARAÇÃO */
+    .cabecalho p {
+        display: flex;
+        align-items: center;
+        text-align: justify;
+        word-wrap: break-word;
+        width: 80%;
+        margin: auto;
+        padding: 0 1em 2em 1em;
+    }
 
-.secao-preparacao {
-    background-color: #FFF7FC;
-    border-radius: 16px;
-    padding: 1.5em;
-    margin-bottom: 1.5em;
-}
+    /* <!-- SEÇÃO PREPARAÇÂO --> */
 
-.secao-preparacao h3 {
-    font-size: 16px;
-    color: #8f2d6b;
-    padding-bottom: 0.7em;
-}
+    .secao-preparacao {
+        margin: auto;
+        margin: 0 2em 0 2em;
+        
+    }
 
-.secao-preparacao ul {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    list-style-position: inside;
-    color: rgb(107, 107, 107);
-    padding-left: 0.5em;
-}
+    /* <!-- SEÇÃO INGREDIENTES --> */
 
-.secao-preparacao ul strong {
-    color: rgba(43, 9, 9, 0.705);
-}
+    .secao-ingredientes {
+        padding: 2em 0 0 2em;
+        
+    }
 
-/* SEÇÃO INGREDIENTES */
+    .secao-ingredientes hr {
+        width: 90%;
+    }
 
-.secao-ingredientes {
-    margin-bottom: 1em;
-}
+    /* <!-- SEÇÃO INTRODUÇÕES --> */
 
-.secao-ingredientes h2 {
-    font-size: 1.5em;
-    font-weight: 500;
-    font-family: primeirafonte;
-    color: rgba(95, 10, 10, 0.815);
-    padding-bottom: 1rem;
-}
+    .secao-introductions {
+        padding: 0 2em;
+    }
 
-.secao-ingredientes ul {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    list-style-position: inside;
-    color: rgb(70, 70, 70);
-    padding-left: 0.5em;
-}
+    /* <!-- SEÇÃO NUTRIÇÃO --> */
 
-.secao-ingredientes hr {
-    margin-top: 1.5em;
-    border-color: rgba(112, 112, 112, 0.123);
-}
+    .secao__nutrition {
+        padding: 1em 2em 2em 2em;
+    }
 
-/* SEÇÃO INTRODUÇÕES */
+    /* <!-- RODAPÉ --> */
 
-.secao-introductions {
-    padding-bottom: 1em;
-}
-
-.secao-introductions h2 {
-    font-weight: 500;
-    font-family: primeirafonte;
-    color: rgba(95, 10, 10, 0.815);
-    padding-bottom: 1rem;
-}
-
-.secao-introductions ol {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    list-style-position: inside;
-    padding-left: 0.5em;
-    color: rgb(70, 70, 70);
-}
-
-.secao-introductions strong {
-    color: rgba(43, 9, 9, 0.705);
-}
-
-.secao-introductions span {
-    line-height: 1.5em;
-}
-
-.secao-introductions hr {
-    margin-top: 1.5em;
-    border-color: rgba(112, 112, 112, 0.123);
-}
-
-/* SEÇÃO NUTRIÇÃO */
-
-.secao__nutrition {
-    color: rgb(70, 70, 70);
-    padding-top: 0.5em;
-}
-
-.secao__nutrition h2 {
-    font-weight: 500;
-    font-family: primeirafonte;
-    color: rgba(95, 10, 10, 0.815);
-    padding-bottom: 1rem;
-}
-
-.secao__nutrition .nutrition-text {
-    padding-bottom: 1.5rem;
-}
-
-.secao__nutrition ul {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    list-style-type: none;
-    
-}
-
-.secao__nutrition ul li p {
-    padding-left: 10%;
-}
-
-.secao__nutrition ul li span {
-    
-}
-
-.secao__nutrition ul li span {
-    color: rgba(95, 10, 10, 0.815);
-}
-
-.secao__nutrition hr {
-    margin-top: 0.5rem;
-    border-color: rgba(112, 112, 112, 0.123);
-}
-
-.nutrition-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    .rodape {
+        display: none;
+    }
 }
 
 /* RODAPÉ */
@@ -198,9 +105,21 @@ body {
 .rodape {
     margin-top: 2em;
     padding: 3px;
-    background-color: black;
+    background-color: rgb(29, 6, 6);
     text-align: center;
     color: white;
+}
+
+.rodape .attribution a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.rodape .attribution a:hover {
+    text-decoration: underline;
+    color: #e7c29e;
 }
 
 
